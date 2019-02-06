@@ -4,6 +4,107 @@ This todo-list is apparently in Swedish, sorry about that.
 /F
 
 ----------------------
+better battery brown out
+why don't the steppers shut anymore?
+
+
+low battery, only trigger if starting above! (usb power less)
+suspension
+less 3dprint
+test button for up / down
+test and use audio feedback
+position sensor / encoder for the stepper motors
+test how / when the step mornings lose steps. Resistance, speed, voltage.
+Better step motor drivers? Read on.
+max speed as a function of curvature?
+Clear multiple paths in svg file
+handle multiple colors
+
+fill_svg, margins
+fill_svg, fill different colors with different patterns
+
+Testing
+v accuracy?
+  the mat is completely correct
+- repeatability?
+  tested square and rhombus, no deviation with usb + 9v connected. battery-dependent?
+- Do steps fail consistently?
+- find boundaries for work area
+v measure current consumption
+  50mA idle, 250mA stepper
+v Are capacitances needed?
+  no, seems to work fine
+- Test acceptable speeds
+  1/400 not ok, 1/600 maybe ok
+- drive faster when rolling out than rolling in?
+
+Hardware
+v longer arm on the servo
+v reduced radius on rollers?
+v pen under the center of rotation
+v better tilt support, screws functioned harshly with the current center of gravity. Fixed with the engines up
+v lace with loops and 1m marking
+v larger angle of string, adjustable?
+v suction plug attachments with string adjacent to the board, how?
+v better center of gravity
+v Easier access to the electronics
+v nice short cords, half-gorgeous anyway
+v major holes for the pen
+- heel to hook rubber head into pen
+- voltage warning?
+- losing steps? HW / SW?
+v less flex in the plate
+v do the spacers have two layers thick?
+v finished hole in rollers, and something to attach thread in
+v SD card
+- Thread hooks in the servo bracket, fix
+- LED / beeper for feedback? Sound with the servo?
+- releasable rollers for manual in / out?
+v battery meter
+- temperature gauge
+- better attachment of the SD reader
+- Mini variant with nano arduin
+- two holes and two spikes for mounting without screw?
+- new design for the shield variant
+
+Software
+- faster wire in / out
+v Reset start point with one button
+v Remember positioning during manual navigation
+- Manual pen controls
+- more programs?
+- selectable speed?
+v variable disparity, alternative calibration procedure
+v acceleration
+v Save position in flash
+v pause function, enables battery replacement?
+v drive to the origin at the end of the plot
+v multicolor
+v design on SD card?
+v Lift the pen and back to the origin at the end of the plot
+- why does IR not work when running cont?
+v Save to eeprom at the touch of a button
+v softer pen up / down
+v Paste the code to fit with smooth servo etc
+   IRremote from 11k to 4k if only to receive with NEC
+v pause / stop / resume function with state saved in eeprom, battery change
+v Size of image x% of distance between points? (possibility to choose a couple of different types, 30, 60, 90%)
+- the ability to reduce the speed from the remote
+v Strange bug where it went straight down very far?!?
+  sometimes does not succeed in reading from SD, maybe patched so that it does not start at all now.
+v Avoid saving to eeprom several times
+v stripper ir-remote library
+v accel mattebug, does it stop in the middle of the arc of a circle?
+- Prevent drawing outside of disparity
+v does scalar error about uncentrated svg?
+v hacks in transition between segments? Are Segments When The Pen Up?
+v better acceleration
+- tuna parameters for accel
+
+Don't do:
+- Upload designs over ir?
+
+----------------------
 bättre batteri brown out
 varför stänger inte av steppers längre?
 
