@@ -53,6 +53,30 @@ decode_results results;
 #define CODE_8 0xff4ab5
 #define CODE_9 0xff52ad
 
+#elif defined RTLSDR_REMOTE
+/******************** RTLSDR_REMOTE **********************/
+#define CODE_BIG_PRINT 0xff02fd           //full screen
+#define CODE_SMALL_PRINT 0xff40bf         //ch-
+#define CODE_LEFT_REEL_IN 0xff50af        //vol-
+#define CODE_LEFT_REEL_OUT 0xff32cd       //record
+#define CODE_RIGHT_REEL_IN 0xff7887       //vol+
+#define CODE_RIGHT_REEL_OUT 0xff30cf      //time shift
+#define CODE_LEFT_CALIBRATION 0xffb24d    //power
+#define CODE_RIGHT_CALIBRATION 0xff6897   //mute
+#define CODE_ENABLE_CONT_DRIVE 0xffa05f   //ch+
+#define CODE_DISABLE_CONT_DRIVE 0xff2ad5  //source
+#define CODE_STOP 0xff48b7                //0
+#define CODE_RESUME 0xff38c7              //recall
+#define CODE_1 0xff906f
+#define CODE_2 0xffb847
+#define CODE_3 0xfff807
+#define CODE_4 0xffb04f
+#define CODE_5 0xff9867
+#define CODE_6 0xffd827
+#define CODE_7 0xff8877
+#define CODE_8 0xffa857
+#define CODE_9 0xffe817
+
 #else
 #error What remote?
 #endif 

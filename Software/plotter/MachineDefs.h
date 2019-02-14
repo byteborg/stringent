@@ -18,7 +18,8 @@
  
 //which remote control to use
 //#define PIONEER_DVD_REMOTE
-#define NONAME_WHITE_REMOTE
+// #define NONAME_WHITE_REMOTE
+#define RTLSDR_REMOTE
 
 //servo pin
 #define SERVO_PIN A5
