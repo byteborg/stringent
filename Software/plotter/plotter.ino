@@ -61,7 +61,7 @@ void setup()
   
 #ifdef SERIAL_DEBUG
   //Initialize serial and wait for port to open:
-    Serial.begin(9600); 
+    Serial.begin(115200); 
     SER_PRINTLN("Setup");
 #endif
   
